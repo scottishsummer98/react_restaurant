@@ -3,7 +3,7 @@ body {
   padding: 2rem;
   margin: auto;
   font-family: 'Overpass Mono', monospace;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   width:65%
 }

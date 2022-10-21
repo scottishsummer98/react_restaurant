@@ -1,0 +1,29 @@
+.container_footer {
+    background-image: url('../../assets/footer-box.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 1rem;
+}
+.image_logo {
+    width:8rem;
+    height:7rem;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.cols {
+    border-right: 2px dotted black;
+    height: 7rem;
+    text-align: center;
+    width: 33%;
+    display: inline-block;
+    align-items:center;
+    vertical-align: middle;
+}
+.cols_brm {
+    height: 7rem;
+    text-align: center;
+    width: 33%;
+    display: inline-block;
+    align-items:center;
+    vertical-align: middle;
+}
