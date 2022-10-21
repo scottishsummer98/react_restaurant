@@ -5,14 +5,14 @@ import './Header.css'
 const Header = () => {
   return (
     <header className="container_header">
-      <Link to="/cardsandbooks" className="topbar_links">
-        <h4>GIFT CARDS & BOOKS</h4>
+      <Link to="/cardsandbooks" className="header_links">
+        <h5>GIFT CARDS & BOOKS</h5>
       </Link>
-      <Link to="/" className="topbar_links">
-        <h1>KAMPSOAHUS</h1>
+      <Link to="/" className="header_links">
+        <h2>KAMPSOAHUS</h2>
       </Link>
-      <Link to="/reservations" className="topbar_links">
-        <h4>RESERVATIONS</h4>
+      <Link to="/reservations" className="header_links">
+        <h5>RESERVATIONS</h5>
       </Link>
     </header>
   )

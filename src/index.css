@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 body {
   padding: 2rem;
   margin: auto;
-  font-family: 'Overpass Mono', monospace;
+  font-family: 'Nanum Myeongjo', serif;
   background-color: white;
   color: black;
   width:65%

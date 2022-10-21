@@ -5,7 +5,11 @@
     gap: 10rem;
     align-items: center;
 }
-.topbar_links {
+.header_links {
     text-decoration: none;
     color: black;
+    transition: all 400ms ease;
+}
+.header_links:hover {
+    color: #D2BF65;
 }

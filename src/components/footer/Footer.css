@@ -25,5 +25,12 @@
     width: 33%;
     display: inline-block;
     align-items:center;
-    vertical-align: middle;
+}
+.footer_links {
+    text-decoration: none;
+    color: black;
+    transition: all 400ms ease;
+}
+.footer_links:hover {
+    color: #D2BF65;
 }
