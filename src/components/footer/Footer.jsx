@@ -55,23 +55,23 @@ const footer = () => {
           <div className="col-lg-1"></div>
           <div className="col-lg-6">
             <div className="footer_nav_links">
-              <Link to="/careers" className="footer_nav_links">
+              <Link to="/contact" className="footer_nav_links">
                 CONTACT
               </Link>
               <VscDebugBreakpointLog />
-              <Link to="/careers" className="footer_nav_links">
+              <Link to="/press" className="footer_nav_links">
                 PRESS
               </Link>
               <VscDebugBreakpointLog />
-              <Link to="/careers" className="footer_nav_links">
+              <Link to="/about" className="footer_nav_links">
                 PRIVACY & DISCLAIMER
               </Link>
               <VscDebugBreakpointLog />
-              <Link to="/careers" className="footer_nav_links">
+              <Link to="/contact" className="footer_nav_links">
                 FEEDBACK
               </Link>
               <VscDebugBreakpointLog />
-              <Link to="/careers" className="footer_nav_links">
+              <Link to="/restaurants" className="footer_nav_links">
                 SITEMAP
               </Link>
               <VscDebugBreakpointLog />
