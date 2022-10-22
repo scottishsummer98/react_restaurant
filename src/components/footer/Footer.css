@@ -4,6 +4,14 @@
     background-repeat: no-repeat;
     padding: 1rem;
 }
+a {
+    font-size: large;
+    color: black;
+    transition: all 400ms ease;
+}
+a:hover {
+    color: #D2BF65;
+}
 .image_logo {
     width:8rem;
     height:7rem;
@@ -12,7 +20,6 @@
 }
 .cols {
     border-right: 2px dotted black;
-    height: 7rem;
     text-align: center;
     width: 33%;
     display: inline-block;
@@ -20,7 +27,6 @@
     vertical-align: middle;
 }
 .cols_brm {
-    height: 7rem;
     text-align: center;
     width: 33%;
     display: inline-block;
@@ -32,5 +38,33 @@
     transition: all 400ms ease;
 }
 .footer_links:hover {
+    color: #D2BF65;
+}
+.footer_social_links {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    background-color: white;
+    transition: all 400ms ease;
+}
+.footer_social_links:hover {
+    color: #D2BF65;
+}
+.footer_nav_links {
+    margin-top: .2rem;
+    text-decoration: none;
+    font-size: x-small;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: .5rem;
+    background-color: white;
+    align-items: center;
+    transition: all 400ms ease;
+}
+.footer_nav_links:hover {
     color: #D2BF65;
 }
