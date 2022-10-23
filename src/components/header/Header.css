@@ -13,3 +13,23 @@
 .header_links:hover {
     color: #D2BF65;
 }
+
+/* Media Queries Medium Devices*/
+@media screen and (max-width:1024px){
+    .container_header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5rem;
+    }
+}
+
+/* Media Queries Small Devices*/
+@media screen and (max-width:600px){
+    .container_header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .5rem;
+    }
+}

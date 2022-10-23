@@ -29,3 +29,21 @@ ul {
     transition: all 400ms ease;
     color: #D2BF65;
 }
+
+/* Media Queries Medium Devices*/
+@media screen and (max-width:1024px){
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+/* Media Queries Small Devices*/
+@media screen and (max-width:600px){
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}

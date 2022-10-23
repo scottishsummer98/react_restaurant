@@ -7,3 +7,19 @@ body {
   color: black;
   width:65%
 }
+
+/* Media Queries Medium Devices*/
+@media screen and (max-width:1024px){
+  body {
+    padding: 1rem;
+    width:80%
+  }
+}
+
+/* Media Queries Small Devices*/
+@media screen and (max-width:600px){
+  body {
+    padding: 1rem;
+    width:100%
+  }
+}
