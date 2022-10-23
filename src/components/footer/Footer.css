@@ -1,5 +1,5 @@
 .container_footer {
-    background-image: url('../../assets/footer-box.png');
+    border: 5px double #D2BF65;
     background-position: top center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -24,6 +24,7 @@ a:hover {
     border-right: 2px dotted black;
     text-align: center;
     width: 33%;
+    height: 7rem;
     display: inline-block;
     align-items:center;
     vertical-align: middle;
@@ -43,6 +44,7 @@ a:hover {
     color: #D2BF65;
 }
 .footer_social_links {
+    margin-top: .5rem;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -50,13 +52,14 @@ a:hover {
     gap: 1rem;
     background-color: white;
     transition: all 400ms ease;
+    position: relative;
 }
 .footer_social_links:hover {
     color: #D2BF65;
 }
 .footer_nav_links {
     position:sticky;
-    margin-top: .2rem;
+    margin-top: .5rem;
     text-decoration: none;
     font-size: x-small;
     text-align: center;
@@ -67,6 +70,7 @@ a:hover {
     background-color: white;
     align-items: center;
     transition: all 400ms ease;
+    position: relative;
 }
 .footer_nav_links:hover {
     color: #D2BF65;
@@ -75,7 +79,7 @@ a:hover {
 /* Media Queries Medium Devices*/
 @media screen and (max-width:1024px){
     .container_footer {
-        background-image: none;
+        border: none;
     }
     .footer_links {
         display: none;
@@ -93,7 +97,7 @@ a:hover {
 /* Media Queries Small Devices*/
 @media screen and (max-width:600px){
     .container_footer {
-        background-image: none;
+        border: none;
     }
     .footer_links {
         display: none;
