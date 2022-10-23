@@ -1,0 +1,13 @@
+.container_navlinks {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+.container_help {
+    margin-top: 2rem;
+    text-align: center;
+}
+.container_help_body {
+    margin-top: 2rem;
+}

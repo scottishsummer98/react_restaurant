@@ -44,7 +44,6 @@ a:hover {
     color: #D2BF65;
 }
 .footer_social_links {
-    margin-top: .5rem;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -58,8 +57,6 @@ a:hover {
     color: #D2BF65;
 }
 .footer_nav_links {
-    position:sticky;
-    margin-top: .5rem;
     text-decoration: none;
     font-size: x-small;
     text-align: center;

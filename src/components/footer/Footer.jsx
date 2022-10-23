@@ -33,7 +33,10 @@ const footer = () => {
             <h6>CAREERS</h6>
           </div>
         </Link>
-        <div className="row">
+        <div
+          className="row"
+          style={{ alignItems: 'center', paddingTop: '1rem' }}
+        >
           <div className="col-lg-1"></div>
           <div className="col-lg-2">
             <div className="footer_social_links">
