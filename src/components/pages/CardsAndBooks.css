@@ -8,6 +8,45 @@
     margin-top: 2rem;
     text-align: center;
 }
+.container_help_header {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
 .container_help_body {
     margin-top: 2rem;
+    text-align: justify;
+}
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: white;
+}
+.accordion-button:focus {
+    border-color: none;
+    box-shadow: none;
+}
+.container_books {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
+}
+.books_image {
+    width:35rem;
+    margin: 2rem 0;
+}
+
+
+
+
+/* Media Queries Medium Devices*/
+@media screen and (max-width:1024px){
+    .container_help_header {
+        width: 100%;
+    }
+}
+
+/* Media Queries Small Devices*/
+@media screen and (max-width:600px){
+    
 }

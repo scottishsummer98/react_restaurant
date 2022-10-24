@@ -1,6 +1,9 @@
 import React from 'react'
 import { HashLink as Link } from 'react-router-hash-link'
+import { BsCurrencyPound } from 'react-icons/bs'
 import './CardsAndBooks.css'
+import Book1 from '../../assets/Book1.jpg'
+import Book2 from '../../assets/Book2.jpg'
 
 const helpData = [
   {
@@ -69,46 +72,65 @@ const CardsAndBooks = () => {
           </Link>
         </div>
       </div>
-      <div className="container_help">
+      <div className="container_books" id="books">
+        <div className="container_books_body">
+          <img className="books_image" src={Book1} alt="" />
+          <h4>HAWKSMOOR: RESTAURANTS & RECIPES</h4>
+          <h5>
+            <b>
+              <BsCurrencyPound /> 30.00
+            </b>
+          </h5>
+        </div>
+        <div className="container_books_body">
+          <img className="books_image" src={Book1} alt="" />
+          <h4>HAWKSMOOR AT HOME</h4>
+          <h5>
+            <b>
+              <BsCurrencyPound /> 30.00
+            </b>
+          </h5>
+        </div>
+      </div>
+      <div className="container_help" id="help">
         <h2>HELP</h2>
-        <p style={{ width: '50%', textAlign: 'center', margin: 'auto' }}>
+        <p className="container_help_header">
           Discover the most frequently asked questions we receive at Hawksmoor
           at Home. If you did not find the answer to your question here, please
           contact us.
         </p>
-        <div className="container_help_body"></div>
-      </div>
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              Accordion Item #2
-            </button>
-          </h2>
-          <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
-            </div>
-          </div>
+        <div className="container_help_body">
+          {helpData.map(({ id, Ques, Ans }) => {
+            return (
+              <div class="accordion" key={id}>
+                <div>
+                  <h2 id={`header` + id}>
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target={`#collapse` + id}
+                      aria-expanded="false"
+                      aria-controls={`collapse` + id}
+                    >
+                      <b>{Ques}</b>
+                    </button>
+                  </h2>
+
+                  <div
+                    id={`collapse` + id}
+                    class="accordion-collapse collapse"
+                    aria-labelledby={`header` + id}
+                  >
+                    <div class="accordion-body">
+                      <b>{Ans}</b>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+              </div>
+            )
+          })}
         </div>
       </div>
     </div>
