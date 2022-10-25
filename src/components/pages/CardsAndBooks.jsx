@@ -5,6 +5,20 @@ import './CardsAndBooks.css'
 import Book1 from '../../assets/Book1.jpg'
 import Book2 from '../../assets/Book2.jpg'
 
+const bookData = [
+  {
+    id: 1,
+    desc:
+      "Hawksmoor: Restaurants & Recipes gives a glimpse into the realities of restaurants, the trials and tribulations we've faced along the way, as well as the people, places and plates that have made it work. All proceeds go to Action Against Hunger, a charity very close to our hearts.",
+    price: '30.00',
+  },
+  {
+    id: 2,
+    desc:
+      "Hawksmoor at Home is a practical cookbook which shows you how to buy and cook great steak and seafood and indeed much else (including how to cook both the 'best burger in Britain' and the 'best roast beef in Britain'); how to mix terrific cocktails and choose wine to accompany your meal. Above all Hawksmoor at Home entertains and informs in the inimitable 'Hawksmoor' way.",
+    price: '35.00',
+  },
+]
 const helpData = [
   {
     id: 1,
@@ -73,24 +87,22 @@ const CardsAndBooks = () => {
         </div>
       </div>
       <div className="container_books" id="books">
-        <div className="container_books_body">
-          <img className="books_image" src={Book1} alt="" />
-          <h4>HAWKSMOOR: RESTAURANTS & RECIPES</h4>
-          <h5>
-            <b>
-              <BsCurrencyPound /> 30.00
-            </b>
-          </h5>
-        </div>
-        <div className="container_books_body">
-          <img className="books_image" src={Book1} alt="" />
-          <h4>HAWKSMOOR AT HOME</h4>
-          <h5>
-            <b>
-              <BsCurrencyPound /> 30.00
-            </b>
-          </h5>
-        </div>
+        {bookData.map(({ id, desc, price }) => {
+          return (
+            <div className="container_books_body">
+              <div class="img__wrap">
+                <img className="books_image" src={Book1} alt="" />
+                <div class="img__description_layer">
+                  <p class="img__description">{desc}</p>
+                </div>
+              </div>
+              <h4>HAWKSMOOR: RESTAURANTS & RECIPES</h4>
+              <h5>
+                £ <b>{price}</b>
+              </h5>
+            </div>
+          )
+        })}
       </div>
       <div className="container_help" id="help">
         <h2>HELP</h2>

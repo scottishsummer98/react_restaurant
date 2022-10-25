@@ -36,6 +36,36 @@
     margin: 2rem 0;
 }
 
+.img__description_layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    color: #D2BF65;
+    visibility: hidden;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1s, visibility 0s;
+  }
+  .img__wrap:hover .img__description_layer {
+    animation: 1s ease-in-out 1s 1 slideInFromLeft;
+    margin: 2rem;
+    visibility: visible;
+    opacity: 0.8;
+    padding: 5rem;
+    text-align: justify;
+  }
+  .img__description {
+    transition: 0s;
+    transform: translateY(1em);
+  }
+  .img__wrap:hover {
+    transform: translateY(0);
+  }
 
 
 
