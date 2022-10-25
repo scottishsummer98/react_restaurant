@@ -1,21 +1,35 @@
 import React from 'react'
 import { HashLink as Link } from 'react-router-hash-link'
-import { BsCurrencyPound } from 'react-icons/bs'
 import './CardsAndBooks.css'
+import Card1 from '../../assets/Card1.jpg'
 import Book1 from '../../assets/Book1.jpg'
 import Book2 from '../../assets/Book2.jpg'
 
+const cardData = [
+  {
+    id: 1,
+    title: 'DIGITAL GIFT CARD',
+    desc:
+      'Digital gift cards for your loved ones. Tourist can take it as souvenirs',
+    image: Card1,
+    price: '50.00',
+  },
+]
 const bookData = [
   {
     id: 1,
+    title: 'KAMPSOAHUS: RESTAURANTS & RECIPES',
     desc:
-      "Hawksmoor: Restaurants & Recipes gives a glimpse into the realities of restaurants, the trials and tribulations we've faced along the way, as well as the people, places and plates that have made it work. All proceeds go to Action Against Hunger, a charity very close to our hearts.",
+      "Kampsoahus: Restaurants & Recipes gives a glimpse into the realities of restaurants, the trials and tribulations we've faced along the way, as well as the people, places and plates that have made it work. All proceeds go to Action Against Hunger, a charity very close to our hearts.",
+    image: Book1,
     price: '30.00',
   },
   {
     id: 2,
+    title: 'KAMPSOAHUS AT HOME',
     desc:
-      "Hawksmoor at Home is a practical cookbook which shows you how to buy and cook great steak and seafood and indeed much else (including how to cook both the 'best burger in Britain' and the 'best roast beef in Britain'); how to mix terrific cocktails and choose wine to accompany your meal. Above all Hawksmoor at Home entertains and informs in the inimitable 'Hawksmoor' way.",
+      "Kampsoahus at Home is a practical cookbook which shows you how to buy and cook great steak and seafood and indeed much else (including how to cook both the 'best burger in Britain' and the 'best roast beef in Britain'); how to mix terrific cocktails and choose wine to accompany your meal. Above all Hawksmoor at Home entertains and informs in the inimitable 'Hawksmoor' way.",
+    image: Book2,
     price: '35.00',
   },
 ]
@@ -86,17 +100,35 @@ const CardsAndBooks = () => {
           </Link>
         </div>
       </div>
-      <div className="container_books" id="books">
-        {bookData.map(({ id, desc, price }) => {
+      <div className="container_books" id="cards">
+        {cardData.map(({ id, title, desc, image, price }) => {
           return (
-            <div className="container_books_body">
+            <div className="container_books_body" key={id}>
               <div class="img__wrap">
-                <img className="books_image" src={Book1} alt="" />
+                <img className="books_image" src={image} alt="" />
                 <div class="img__description_layer">
                   <p class="img__description">{desc}</p>
                 </div>
               </div>
-              <h4>HAWKSMOOR: RESTAURANTS & RECIPES</h4>
+              <h4>{title}</h4>
+              <h5>
+                £ <b>{price}</b>
+              </h5>
+            </div>
+          )
+        })}
+      </div>
+      <div className="container_books" id="books">
+        {bookData.map(({ id, title, desc, image, price }) => {
+          return (
+            <div className="container_books_body" key={id}>
+              <div class="img__wrap">
+                <img className="books_image" src={image} alt="" />
+                <div class="img__description_layer">
+                  <p class="img__description">{desc}</p>
+                </div>
+              </div>
+              <h4>{title}</h4>
               <h5>
                 £ <b>{price}</b>
               </h5>
