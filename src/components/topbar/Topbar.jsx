@@ -50,22 +50,22 @@ const Topbar = () => {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <Link className="dropdown-item" to="/menu">
+                  <Link className="dropdown-item" to="/menu#appetizers">
                     APPETIZERS
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/menu">
+                  <Link className="dropdown-item" to="/menu#mains">
                     MAINS
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/menu">
+                  <Link className="dropdown-item" to="/menu#desserts">
                     DESSERTS
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/menu">
+                  <Link className="dropdown-item" to="/menu#beverages">
                     BEVERAGES
                   </Link>
                 </li>
@@ -81,17 +81,17 @@ const Topbar = () => {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <Link className="dropdown-item" to="/about">
+                  <Link className="dropdown-item" to="/about#journey">
                     OUR JOURNEY
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/about">
+                  <Link className="dropdown-item" to="/about#food">
                     OUR FOOD
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/about">
+                  <Link className="dropdown-item" to="/about#purpose">
                     OUR PURPOSE
                   </Link>
                 </li>

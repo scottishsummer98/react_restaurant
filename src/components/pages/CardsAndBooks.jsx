@@ -117,7 +117,7 @@ const CardsAndBooks = () => {
                 </div>
                 <h4>{title}</h4>
                 <h5>
-                  £ <b>{price}</b>
+                  BDT <b>{price}</b>
                 </h5>
               </div>
             )
@@ -144,7 +144,7 @@ const CardsAndBooks = () => {
                 </div>
                 <h4>{title}</h4>
                 <h5>
-                  £ <b>{price}</b>
+                  BDT <b>{price}</b>
                 </h5>
               </div>
             )

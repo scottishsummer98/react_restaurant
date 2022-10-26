@@ -1,0 +1,20 @@
+.container_about_journey, .container_about_food, .container_about_purpose {
+    padding: 4rem;
+}
+.container_about_journey_header, .container_about_food_header, .container_about_purpose_header {
+    text-align: center;
+    padding:1rem;
+}
+.container_about_journey_body, .container_about_food_body, .container_about_purpose_body {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.image {
+    width: 40rem;
+    height: 25rem;
+}
+.video {
+    width: 60rem;
+    height: 30rem;
+}

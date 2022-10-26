@@ -1,0 +1,6 @@
+.container_menu_appetizers, .container_menu_mains, .container_menu_desserts, .container_menu_beverages {
+    padding: 4rem;
+}
+.container_menu_appetizers_header, .container_menu_mains_header, .container_menu_desserts_header, .container_menu_beverages_header {
+    text-align: center;
+}
