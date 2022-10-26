@@ -80,7 +80,6 @@ const helpData = [
 const CardsAndBooks = () => {
   return (
     <div>
-      <hr />
       <div className="container_navlinks">
         <div>
           <Link to="#cards" style={{ textDecoration: 'none' }}>
@@ -100,41 +99,57 @@ const CardsAndBooks = () => {
           </Link>
         </div>
       </div>
-      <div className="container_books" id="cards">
-        {cardData.map(({ id, title, desc, image, price }) => {
-          return (
-            <div className="container_books_body" key={id}>
-              <div class="img__wrap">
-                <img className="books_image" src={image} alt="" />
-                <div class="img__description_layer">
-                  <p class="img__description">{desc}</p>
+      <div className="container_bookscards" id="cards">
+        <h2>GIFT CARDS</h2>
+        <p className="container_bookscards_header">
+          Find amazing gift cards as presents for your family, friends, even for
+          yourself.
+        </p>
+        <div className="container_bookscards_body">
+          {cardData.map(({ id, title, desc, image, price }) => {
+            return (
+              <div key={id}>
+                <div class="img__wrap">
+                  <img className="books_image" src={image} alt="" />
+                  <div class="img__description_layer">
+                    <p class="img__description">{desc}</p>
+                  </div>
                 </div>
+                <h4>{title}</h4>
+                <h5>
+                  £ <b>{price}</b>
+                </h5>
               </div>
-              <h4>{title}</h4>
-              <h5>
-                £ <b>{price}</b>
-              </h5>
-            </div>
-          )
-        })}
+            )
+          })}
+        </div>
       </div>
-      <div className="container_books" id="books">
-        {bookData.map(({ id, title, desc, image, price }) => {
-          return (
-            <div className="container_books_body" key={id}>
-              <div class="img__wrap">
-                <img className="books_image" src={image} alt="" />
-                <div class="img__description_layer">
-                  <p class="img__description">{desc}</p>
+      <div className="container_bookscards" id="books">
+        <h2>BOOKS</h2>
+        <p className="container_bookscards_header">
+          From the story of our restaurant, culture and heritages of traditional
+          bengali cooking to the tricks and tips from our world class chefs
+          about how to cook like a pro. Buy one of our cook books to make your
+          homemade food taste like a five star restaurant.
+        </p>
+        <div className="container_bookscards_body">
+          {bookData.map(({ id, title, desc, image, price }) => {
+            return (
+              <div key={id}>
+                <div class="img__wrap">
+                  <img className="books_image" src={image} alt="" />
+                  <div class="img__description_layer">
+                    <p class="img__description">{desc}</p>
+                  </div>
                 </div>
+                <h4>{title}</h4>
+                <h5>
+                  £ <b>{price}</b>
+                </h5>
               </div>
-              <h4>{title}</h4>
-              <h5>
-                £ <b>{price}</b>
-              </h5>
-            </div>
-          )
-        })}
+            )
+          })}
+        </div>
       </div>
       <div className="container_help" id="help">
         <h2>HELP</h2>

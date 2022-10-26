@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 import './Topbar.css'
 
 const Topbar = () => {
@@ -29,12 +29,12 @@ const Topbar = () => {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <Link className="dropdown-item" to="/restaurants">
+                  <Link className="dropdown-item" to="/restaurants#dhaka">
                     DHAKA
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/restaurants">
+                  <Link className="dropdown-item" to="/restaurants#ctg">
                     CHITTAGONG
                   </Link>
                 </li>

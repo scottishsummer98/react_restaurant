@@ -4,11 +4,11 @@
     gap: 1rem;
     justify-content: center;
 }
-.container_help {
-    margin-top: 2rem;
+.container_help, .container_bookscards {
+    padding: 3rem 0;
     text-align: center;
 }
-.container_help_header {
+.container_help_header, .container_bookscards_header {
     width: 50%;
     text-align: center;
     margin: auto;
@@ -16,6 +16,12 @@
 .container_help_body {
     margin-top: 2rem;
     text-align: justify;
+}
+.container_bookscards_body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
 }
 .accordion-button:not(.collapsed) {
     color: black;
@@ -25,17 +31,10 @@
     border-color: none;
     box-shadow: none;
 }
-.container_books {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    justify-items: center;
-}
 .books_image {
     width:35rem;
     margin: 2rem 0;
 }
-
 .img__description_layer {
     position: absolute;
     top: 0;

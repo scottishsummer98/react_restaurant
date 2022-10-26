@@ -24,6 +24,7 @@ const App = () => {
     <BrowserRouter>
       <Header />
       <Topbar />
+      <hr />
       <Routes>
         <Route
           path="/"
