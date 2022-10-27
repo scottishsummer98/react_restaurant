@@ -229,7 +229,7 @@ const BevData = [
 
 const Menu = () => {
   return (
-    <div>
+    <div className="container_menu">
       <div className="container_menu_appetizers" id="appetizers">
         <div className="container_menu_appetizers_header">
           <h2>APPETIZERS</h2>
@@ -249,7 +249,7 @@ const Menu = () => {
               600: {
                 width: 600,
                 slidesPerView: 2,
-                spaceBetween: 98,
+                spaceBetween: 130,
               },
               // when window width is >= 300px
               300: {
@@ -298,7 +298,7 @@ const Menu = () => {
               600: {
                 width: 600,
                 slidesPerView: 2,
-                spaceBetween: 98,
+                spaceBetween: 130,
               },
               // when window width is >= 300px
               300: {
@@ -344,7 +344,7 @@ const Menu = () => {
               600: {
                 width: 600,
                 slidesPerView: 2,
-                spaceBetween: 98,
+                spaceBetween: 130,
               },
               // when window width is >= 300px
               300: {
@@ -390,7 +390,7 @@ const Menu = () => {
               600: {
                 width: 600,
                 slidesPerView: 2,
-                spaceBetween: 98,
+                spaceBetween: 130,
               },
               // when window width is >= 300px
               300: {

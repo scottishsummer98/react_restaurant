@@ -86,11 +86,7 @@ const News = () => {
               return (
                 <div className="container_news_articles" key={id}>
                   <div>
-                    <img
-                      style={{ width: '25rem', height: '15rem' }}
-                      src={image}
-                      alt=""
-                    />
+                    <img className="image_container" src={image} alt="" />
                   </div>
                   <div>
                     <h5 style={{ color: '#D2BF65', marginBottom: '1rem' }}>
