@@ -57,7 +57,12 @@ const About = () => {
             steak hamburger short loin prosciutto shank ribeye. Prosciutto jerky
             ribeye ham hock.
           </p>
-          <img className="image" src={Food} alt="" />
+          <img
+            className="image"
+            style={{ marginBottom: '3rem' }}
+            src={Food}
+            alt=""
+          />
         </div>
         <div className="container_about_food_body">
           <img className="image" src={Quality} alt="" />
@@ -82,6 +87,8 @@ const About = () => {
       <div className="container_about_purpose" id="purpose">
         <div className="container_about_purpose_header">
           <h2>KAMPSAOHUS PURPOSE</h2>
+        </div>
+        <div className="container_about_purpose_body">
           <p style={{ textAlign: 'justify' }}>
             Dolor voluptate eiusmod, alcatra veniam cupidatat id prosciutto qui
             reprehenderit ball tip in. Pork belly alcatra nostrud consectetur,
