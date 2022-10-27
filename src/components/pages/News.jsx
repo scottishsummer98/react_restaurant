@@ -65,6 +65,7 @@ const NewsData = [
   },
 ]
 const News = () => {
+  const [searchNews, setSearchNews] = useState('')
   return (
     <div>
       <div className="container_news">
@@ -77,16 +78,31 @@ const News = () => {
                   className="form-control"
                   type="search"
                   placeholder="Search News"
+                  onChange={(event) => {
+                    setSearchNews(event.target.value)
+                  }}
                 />
               </div>
             </div>
           </div>
           <div className="col-lg-9">
-            {NewsData.map(({ id, image, title, desc1, desc2, desc3 }) => {
+            {NewsData.filter((val) => {
+              if (searchNews == '') {
+                return val
+              } else if (
+                val.title.toLowerCase().includes(searchNews.toLowerCase())
+              ) {
+                return val
+              }
+            }).map(({ id, image, title, desc1, desc2, desc3 }) => {
               return (
                 <div className="container_news_articles" key={id}>
                   <div>
-                    <img className="image_container" src={image} alt="" />
+                    <img
+                      style={{ width: '25rem', height: '15rem' }}
+                      src={image}
+                      alt=""
+                    />
                   </div>
                   <div>
                     <h5 style={{ color: '#D2BF65', marginBottom: '1rem' }}>
