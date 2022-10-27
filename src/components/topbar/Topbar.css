@@ -15,9 +15,10 @@
     color: #D2BF65;
 }
 ul {
+    margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 3rem;
 }
 .dropdown-menu {
     border: none;

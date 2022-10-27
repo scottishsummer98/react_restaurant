@@ -4,7 +4,28 @@
 .container_menu_appetizers_header, .container_menu_mains_header, .container_menu_desserts_header, .container_menu_beverages_header {
     text-align: center;
 }
-.image {
-
+.container_image {
     width: 20rem;
+    height: 18rem;
+}
+/* Media Queries Medium Devices*/
+@media screen and (max-width:1024px){
+    .container_menu_appetizers, .container_menu_mains, .container_menu_desserts, .container_menu_beverages {
+        padding: 0;
+    }
+    .container_image {
+        width: 18rem;
+        height: 14rem;
+    }
+}
+
+/* Media Queries Small Devices*/
+@media screen and (max-width:600px){
+    .container_menu_appetizers, .container_menu_mains, .container_menu_desserts, .container_menu_beverages {
+        padding: 0;
+    }
+    .container_image {
+        width: 22rem;
+        height: 18rem;
+    }
 }

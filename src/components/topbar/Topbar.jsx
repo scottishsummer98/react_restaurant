@@ -102,31 +102,15 @@ const Topbar = () => {
                 NEWS
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/press">
-                PRESS
+            <li className="nav-item" style={{ width: '15rem' }}>
+              <Link className="nav-link" to="/cardsandbooks">
+                GIFTS CARDS & BOOKS
               </Link>
             </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link  dropdown-toggle"
-                href="#"
-                data-bs-toggle="dropdown"
-              >
-                PRIVATE DINING
-              </a>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link className="dropdown-item" to="/privatedining">
-                    DHAKA
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/privatedining">
-                    CHITTAGONG
-                  </Link>
-                </li>
-              </ul>
+            <li className="nav-item">
+              <Link className="nav-link" to="/reservations">
+                RESERVATIONS
+              </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/careers">

@@ -70,12 +70,31 @@
 
 /* Media Queries Medium Devices*/
 @media screen and (max-width:1024px){
-    .container_help_header {
+    .container_help_header, .container_bookscards_header {
         width: 100%;
     }
+    .container_bookscards_body {
+        display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+    }
+    
 }
 
 /* Media Queries Small Devices*/
 @media screen and (max-width:600px){
-    
+    .container_help_header, .container_bookscards_header {
+        width: 100%;
+    }
+    .container_bookscards_body {
+        display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+    }
+    .books_image {
+        width:20rem;
+        margin: 2rem 0;
+    }
 }

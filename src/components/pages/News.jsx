@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './News.css'
 //Images
 import News1 from '../../assets/News1.jpg'

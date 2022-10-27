@@ -242,13 +242,27 @@ const Menu = () => {
           <Swiper
             className="mySwiper"
             slidesPerView={3}
-            spaceBetween={30}
+            spaceBetween={98}
             loop={true}
+            breakpoints={{
+              // when window width is >= 600px
+              600: {
+                width: 600,
+                slidesPerView: 2,
+                spaceBetween: 98,
+              },
+              // when window width is >= 300px
+              300: {
+                width: 300,
+                slidesPerView: 1,
+                spaceBetween: 100,
+              },
+            }}
           >
             {AppData.map(({ id, image, name, desc, portion, price }) => {
               return (
                 <SwiperSlide key={id}>
-                  <img style={{ width: '20rem' }} src={image} alt="" />
+                  <img className="container_image" src={image} alt="" />
                   <div style={{ paddingTop: '1rem' }}>
                     <h5>
                       <b>{name}</b>
@@ -277,13 +291,27 @@ const Menu = () => {
           <Swiper
             className="mySwiper"
             slidesPerView={3}
-            spaceBetween={30}
+            spaceBetween={98}
             loop={true}
+            breakpoints={{
+              // when window width is >= 600px
+              600: {
+                width: 600,
+                slidesPerView: 2,
+                spaceBetween: 98,
+              },
+              // when window width is >= 300px
+              300: {
+                width: 300,
+                slidesPerView: 1,
+                spaceBetween: 100,
+              },
+            }}
           >
             {MainsData.map(({ id, image, name, desc, portion, price }) => {
               return (
                 <SwiperSlide key={id}>
-                  <img style={{ width: '20rem' }} src={image} alt="" />
+                  <img className="container_image" src={image} alt="" />
                   <div style={{ paddingTop: '1rem' }}>
                     <h5>
                       <b>{name}</b>
@@ -309,13 +337,27 @@ const Menu = () => {
           <Swiper
             className="mySwiper"
             slidesPerView={3}
-            spaceBetween={30}
+            spaceBetween={98}
             loop={true}
+            breakpoints={{
+              // when window width is >= 600px
+              600: {
+                width: 600,
+                slidesPerView: 2,
+                spaceBetween: 98,
+              },
+              // when window width is >= 300px
+              300: {
+                width: 300,
+                slidesPerView: 1,
+                spaceBetween: 100,
+              },
+            }}
           >
             {DesData.map(({ id, image, name, desc, portion, price }) => {
               return (
                 <SwiperSlide key={id}>
-                  <img style={{ width: '20rem' }} src={image} alt="" />
+                  <img className="container_image" src={image} alt="" />
                   <div style={{ paddingTop: '1rem' }}>
                     <h5>
                       <b>{name}</b>
@@ -341,13 +383,27 @@ const Menu = () => {
           <Swiper
             className="mySwiper"
             slidesPerView={3}
-            spaceBetween={30}
+            spaceBetween={98}
             loop={true}
+            breakpoints={{
+              // when window width is >= 600px
+              600: {
+                width: 600,
+                slidesPerView: 2,
+                spaceBetween: 98,
+              },
+              // when window width is >= 300px
+              300: {
+                width: 300,
+                slidesPerView: 1,
+                spaceBetween: 100,
+              },
+            }}
           >
             {BevData.map(({ id, image, name, desc, portion, price }) => {
               return (
                 <SwiperSlide key={id}>
-                  <img style={{ width: '20rem' }} src={image} alt="" />
+                  <img className="container_image" src={image} alt="" />
                   <div style={{ paddingTop: '1rem' }}>
                     <h5>
                       <b>{name}</b>

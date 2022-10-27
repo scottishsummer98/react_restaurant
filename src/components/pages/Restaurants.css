@@ -16,4 +16,36 @@
 
 .restaurant_image:hover {
     transform: scale(1.1);
-  }
+}
+
+/* Media Queries Medium Devices*/
+@media screen and (max-width:1024px){
+    .container_restaurants_body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        justify-items: center;
+    }
+    .restaurant_image {
+        width: 20rem;
+    }
+    .restaurant_image:hover {
+        transform: scale(1.1);
+    }
+}
+
+/* Media Queries Small Devices*/
+@media screen and (max-width:600px){
+    .container_restaurants_body {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        justify-items: center;
+    }
+    .restaurant_image {
+        width: 20rem;
+    }
+    .restaurant_image:hover {
+        transform: scale(1.1);
+    }
+}
