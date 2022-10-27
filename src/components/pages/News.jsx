@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link, useParams } from 'react-router-dom'
 import './News.css'
 //Images
 import News1 from '../../assets/News1.jpg'
@@ -65,59 +66,110 @@ const NewsData = [
   },
 ]
 const News = () => {
+  const [isOpened, setIsOpened] = useState(false)
+  function toggler() {
+    setIsOpened((wasOpened) => !wasOpened)
+  }
+  function singleNews(id) {
+    const selectedNews = NewsData.filter((ND) => {
+      return ND.id === id
+    })
+    return
+  }
   const [searchNews, setSearchNews] = useState('')
   return (
     <div>
       <div className="container_news">
-        <div className="row">
-          <div className="col-lg-3">
-            <div className="container_news_search">
-              <h2 className="f2">News</h2>
-              <div className="pa2">
-                <input
-                  className="form-control"
-                  type="search"
-                  placeholder="Search News"
-                  onChange={(event) => {
-                    setSearchNews(event.target.value)
-                  }}
-                />
+        {!isOpened ? (
+          <div className="row">
+            <div className="col-lg-3">
+              <div className="container_news_search">
+                <h2 className="f2">News</h2>
+                <div className="pa2">
+                  <input
+                    className="form-control"
+                    type="search"
+                    placeholder="Search News"
+                    onChange={(event) => {
+                      setSearchNews(event.target.value)
+                    }}
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-lg-9">
-            {NewsData.filter((val) => {
-              if (searchNews == '') {
-                return val
-              } else if (
-                val.title.toLowerCase().includes(searchNews.toLowerCase())
-              ) {
-                return val
-              }
-            }).map(({ id, image, title, desc1, desc2, desc3 }) => {
-              return (
-                <div className="container_news_articles" key={id}>
-                  <div>
-                    <img
-                      style={{ width: '25rem', height: '15rem' }}
-                      src={image}
-                      alt=""
-                    />
+            <div className="col-lg-9">
+              {NewsData.filter((val) => {
+                if (searchNews == '') {
+                  return val
+                } else if (
+                  val.title.toLowerCase().includes(searchNews.toLowerCase())
+                ) {
+                  return val
+                }
+              }).map(({ id, image, title, desc1, desc2, desc3 }) => {
+                return (
+                  <div className="container_news_articles" key={id}>
+                    <div>
+                      <img
+                        style={{ width: '25rem', height: '15rem' }}
+                        src={image}
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <h5 style={{ color: '#D2BF65', marginBottom: '1rem' }}>
+                        {title}
+                      </h5>
+                      <p style={{ textAlign: 'justify', marginBottom: '4rem' }}>
+                        {desc1.substring(0, 100) + '......'}
+                      </p>
+                      <button
+                        className="button"
+                        key={id}
+                        onClick={() => {
+                          toggler()
+                          singleNews(id)
+                        }}
+                      >
+                        READ MORE
+                      </button>
+                    </div>
                   </div>
-                  <div>
-                    <h5 style={{ color: '#D2BF65', marginBottom: '1rem' }}>
-                      {title}
-                    </h5>
-                    <p style={{ textAlign: 'justify' }}>
-                      {desc1.substring(0, 100) + '......'}
-                    </p>
-                    <button className="button">SEE MORE</button>
-                  </div>
-                </div>
-              )
-            })}
+                )
+              })}
+            </div>
           </div>
-        </div>
+        ) : (
+          <div>
+            <div className="container_news_single">
+              <div>
+                <img
+                  className="container_news_image_single"
+                  src={News4}
+                  alt=""
+                />
+              </div>
+              <div>
+                <h2 style={{ textAlign: 'center' }}>sdasdasda</h2>
+                <p style={{ textAlign: 'justify' }}>
+                  sdfsdf
+                  <br />
+                  <br />
+                  <br />
+                  sdfsdfsd
+                </p>
+              </div>
+            </div>
+            <div>
+              <p style={{ marginTop: '1rem', textAlign: 'justify' }}>
+                sdfsdfds
+              </p>
+            </div>
+            <button className="button" onClick={toggler}>
+              Get Back
+            </button>
+          </div>
+        )}
       </div>
     </div>
   )
