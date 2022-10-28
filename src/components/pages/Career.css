@@ -1,12 +1,9 @@
 .container_careers_intro {
     text-align: center;
 }
-.slider_image {
+.careers_slider_image {
     width: 25rem;
     height: 24rem;
-}
-.container_image {
-    width: 100%;
 }
 .container_careers_benefits {
     padding: 3rem 0;

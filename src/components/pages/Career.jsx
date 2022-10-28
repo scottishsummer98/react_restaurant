@@ -17,10 +17,7 @@ const Career = () => {
   return (
     <div>
       <div className="container_careers_intro">
-        <h2>KAMPSOAHUS CAREERS</h2>
-        <h3>
-          <b>A rewarding Career</b>
-        </h3>
+        <h2>A REWARDING CAREER</h2>
         <p>
           Careers with Hawksmoor are among the best. We offer generous pay,
           extensive benefits, award-winning restaurants, fantastic career
@@ -54,22 +51,22 @@ const Career = () => {
           modules={[Autoplay]}
         >
           <SwiperSlide>
-            <img className="slider_image" src={Career1} alt="" />
+            <img className="careers_slider_image" src={Career1} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="slider_image" src={Career2} alt="" />
+            <img className="careers_slider_image" src={Career2} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="slider_image" src={Career3} alt="" />
+            <img className="careers_slider_image" src={Career3} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="slider_image" src={Career4} alt="" />
+            <img className="careers_slider_image" src={Career4} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="slider_image" src={Career5} alt="" />
+            <img className="careers_slider_image" src={Career5} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="slider_image" src={Career6} alt="" />
+            <img className="careers_slider_image" src={Career6} alt="" />
           </SwiperSlide>
         </Swiper>
         <br />
