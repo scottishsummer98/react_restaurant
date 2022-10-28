@@ -62,20 +62,20 @@ const footer = () => {
                 JOURNEY
               </Link>
               <VscDebugBreakpointLog />
-              <Link to="/about#purpose" className="footer_nav_links">
-                PURPOSE
-              </Link>
-              <VscDebugBreakpointLog />
-              <Link to="/about#food" className="footer_nav_links">
-                QUALITY & HEIGENE
-              </Link>
-              <VscDebugBreakpointLog />
               <Link to="/news" className="footer_nav_links">
                 NEWS
               </Link>
               <VscDebugBreakpointLog />
+              <Link to="/about#purpose" className="footer_nav_links">
+                PURPOSE
+              </Link>
+              <VscDebugBreakpointLog />
               <Link to="/restaurants" className="footer_nav_links">
                 RESTAURANTS
+              </Link>
+              <VscDebugBreakpointLog />
+              <Link to="/reservations" className="footer_nav_links">
+                RESERVATIONS
               </Link>
               <VscDebugBreakpointLog />
               <a

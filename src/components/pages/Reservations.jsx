@@ -1,8 +1,9 @@
 import React, { useRef } from 'react'
-import emailjs from 'emailjs-com'
-
-import './Reservations.css'
 import { Link } from 'react-router-dom'
+import emailjs from 'emailjs-com'
+import './Reservations.css'
+//Images
+import Reserve from '../../assets/Reserve.jpg'
 
 const Reservations = () => {
   const form = useRef()
@@ -19,8 +20,8 @@ const Reservations = () => {
     e.target.reset()
   }
   return (
-    <div className="row">
-      <div className="col-lg-5 text-center">
+    <div className="container_reservations">
+      <div className="container_reservations_intro">
         <h2>MAKE A RESERVATION</h2>
         <Link to="/restaurants" style={{ textDecoration: 'none' }}>
           <h5>
@@ -28,8 +29,9 @@ const Reservations = () => {
             directly
           </h5>
         </Link>
+        <img className="container_reservation_image" src={Reserve} alt="" />
       </div>
-      <div className="col-lg-7">
+      <div className="container_reservations_form">
         <form ref={form} onSubmit={sendEmail}>
           <input
             type="email"
