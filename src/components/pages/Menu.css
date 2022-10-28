@@ -14,7 +14,7 @@
         padding: 2rem;
     }
     .container_menu_appetizers_header, .container_menu_mains_header, .container_menu_desserts_header, .container_menu_beverages_header {
-        text-align: justify;
+        text-align: center;
     }
     .container_image {
         width: 22rem;
@@ -28,6 +28,7 @@
         padding: 0;
     }
     .container_menu_appetizers_header, .container_menu_mains_header, .container_menu_desserts_header, .container_menu_beverages_header {
+        text-align: center;
         margin-top: 2rem;
     }
     .container_image {

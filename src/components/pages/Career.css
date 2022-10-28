@@ -51,4 +51,7 @@
     .careers_image_team {
         width: 21rem;
     }
+    .container_careers_team {
+        align-items: center;
+    }
 }
