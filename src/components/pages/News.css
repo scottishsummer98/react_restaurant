@@ -47,7 +47,7 @@
 .container_news_single {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 1rem;;
 }
 .container_news_image_single {
   width: 40rem;
