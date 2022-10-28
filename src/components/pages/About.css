@@ -1,5 +1,5 @@
 .container_about_journey, .container_about_food, .container_about_purpose {
-    padding: 4rem;
+    padding: 2rem;
 }
 .container_about_journey_header, .container_about_food_header, .container_about_purpose_header {
     text-align: center;
@@ -20,7 +20,7 @@
     height: 25rem;
 }
 .video {
-    width: 65rem;
+    width: 69rem;
     height: 30rem;
 }
 

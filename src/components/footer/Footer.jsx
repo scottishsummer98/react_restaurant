@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 import './Footer.css'
 import logo from '../../assets/logo.jpg'
 import {
@@ -15,7 +15,7 @@ const footer = () => {
   return (
     <footer>
       <div className="container_footer">
-        <Link to="/menu" className="footer_links">
+        <Link to="/news" className="footer_links">
           <div className="cols">
             <h6>LATEST NEWS</h6>
             <p>
@@ -58,24 +58,24 @@ const footer = () => {
           <div className="col-lg-1"></div>
           <div className="col-lg-6">
             <div className="footer_nav_links">
-              <Link to="/contact" className="footer_nav_links">
-                CONTACT
+              <Link to="/about#journey" className="footer_nav_links">
+                JOURNEY
               </Link>
               <VscDebugBreakpointLog />
-              <Link to="/press" className="footer_nav_links">
-                PRESS
+              <Link to="/about#purpose" className="footer_nav_links">
+                PURPOSE
               </Link>
               <VscDebugBreakpointLog />
-              <Link to="/about" className="footer_nav_links">
-                PRIVACY & DISCLAIMER
+              <Link to="/about#food" className="footer_nav_links">
+                QUALITY & HEIGENE
               </Link>
               <VscDebugBreakpointLog />
-              <Link to="/contact" className="footer_nav_links">
-                FEEDBACK
+              <Link to="/news" className="footer_nav_links">
+                NEWS
               </Link>
               <VscDebugBreakpointLog />
               <Link to="/restaurants" className="footer_nav_links">
-                SITEMAP
+                RESTAURANTS
               </Link>
               <VscDebugBreakpointLog />
               <a

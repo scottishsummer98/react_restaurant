@@ -33,26 +33,10 @@ const App = () => {
           }
         ></Route>
         <Route
-          path="/cardsandbooks"
+          path="/restaurants"
           element={
             <>
-              <CardsAndBooks />
-            </>
-          }
-        ></Route>
-        <Route
-          path="/reservations"
-          element={
-            <>
-              <Reservations />
-            </>
-          }
-        ></Route>
-        <Route
-          path="/careers"
-          element={
-            <>
-              <Career />
+              <Restaurants />
             </>
           }
         ></Route>
@@ -61,14 +45,6 @@ const App = () => {
           element={
             <>
               <Menu />
-            </>
-          }
-        ></Route>
-        <Route
-          path="/restaurants"
-          element={
-            <>
-              <Restaurants />
             </>
           }
         ></Route>
@@ -89,26 +65,26 @@ const App = () => {
           }
         ></Route>
         <Route
-          path="/press"
+          path="/cardsandbooks"
           element={
             <>
-              <Press />
+              <CardsAndBooks />
             </>
           }
         ></Route>
         <Route
-          path="/contact"
+          path="/reservations"
           element={
             <>
-              <Contact />
+              <Reservations />
             </>
           }
         ></Route>
         <Route
-          path="/privatedining"
+          path="/careers"
           element={
             <>
-              <PrivateDining />
+              <Career />
             </>
           }
         ></Route>
