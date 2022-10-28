@@ -14,3 +14,7 @@
     background-color: rgba(0, 0, 0, 0.571);
     width: 100%;
 }
+.container_intro {
+    padding-top: 2rem;
+    text-align: center;
+}

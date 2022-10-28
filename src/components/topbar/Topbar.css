@@ -3,9 +3,30 @@
 	.navbar .nav-item:hover .dropdown-menu{ display: block; }
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 }
-.main_nav:hover {
+.container_topbar {
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    background-color: white;
+}
+.container_topbar_changed {
+    background-color: #D2BF65;
+}
+.container_header {
+    text-align: center;
+}
+.header_links {
+    text-decoration: none;
+    color: black;
     transition: all 400ms ease;
+}
+.header_links:hover {
     color: #D2BF65;
+}
+.header_links_changed {
+    color: white;
+}
+.header_links_changed:hover {
+    color: black;
 }
 .nav-link {
     color: black;
@@ -13,6 +34,13 @@
 .nav-link:hover {
     transition: all 400ms ease;
     color: #D2BF65;
+}
+.color_changer {
+    color: white;
+}
+.color_changer:hover {
+    transition: all 800ms ease;
+    color: black;
 }
 ul {
     margin: auto;

@@ -4,7 +4,6 @@ import $ from 'jquery'
 import Popper from 'popper.js'
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Header from './components/header/Header'
 import Topbar from './components/topbar/Topbar'
 import Footer from './components/footer/Footer'
 import Home from './components/pages/Home'
@@ -22,7 +21,6 @@ import PrivateDining from './components/pages/PrivateDining'
 const App = () => {
   return (
     <BrowserRouter>
-      <Header />
       <Topbar />
       <hr />
       <Routes>
