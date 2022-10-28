@@ -105,7 +105,7 @@ const News = () => {
                   <div className="container_news_articles" key={id}>
                     <div>
                       <img
-                        style={{ width: '25rem', height: '15rem' }}
+                        className="container_news_articles_image"
                         src={image}
                         alt=""
                       />
@@ -114,7 +114,7 @@ const News = () => {
                       <h5 style={{ color: '#D2BF65', marginBottom: '1rem' }}>
                         {title}
                       </h5>
-                      <p style={{ textAlign: 'justify', marginBottom: '4rem' }}>
+                      <p className="container_news_articles_shortdesc">
                         {desc1.substring(0, 100) + '......'}
                       </p>
                       <button
