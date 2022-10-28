@@ -110,7 +110,7 @@ const News = () => {
                         alt=""
                       />
                     </div>
-                    <div>
+                    <div className="container_news_articles_header">
                       <h5 style={{ color: '#D2BF65', marginBottom: '1rem' }}>
                         {title}
                       </h5>
