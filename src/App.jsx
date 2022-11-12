@@ -14,9 +14,6 @@ import Career from './components/pages/Career'
 import Restaurants from './components/pages/Restaurants'
 import About from './components/pages/About'
 import News from './components/pages/News'
-import Press from './components/pages/Press'
-import Contact from './components/pages/Contact'
-import PrivateDining from './components/pages/PrivateDining'
 
 const App = () => {
   return (
